@@ -2,9 +2,6 @@ package com.qa.ims.controller;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -63,8 +60,9 @@ public class CustomerControllerTest {
 		String id = "1";
 		String firstName = "Rhys";
 		String surname = "Thompson";
+		String address = "23 Candy Lane";
 		Mockito.doReturn(id, firstName, surname).when(customerController).getInput();
-		Customer customer = new Customer(1L, firstName, surname);
+		Customer customer = new Customer(1L, firstName, surname, address);
 		Mockito.when(customerServices.update(customer)).thenReturn(customer);
 		assertEquals(customer, customerController.update());
 	}

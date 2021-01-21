@@ -26,6 +26,30 @@ public class Orders {
 		this.customer_id = customer_id;
 	}
 
+	public Long getOrder_id() {
+		return order_id;
+	}
+
+	public void setOrder_id(Long order_id) {
+		this.order_id = order_id;
+	}
+
+	public Long getCustomer_id() {
+		return customer_id;
+	}
+
+	public void setCustomer_id(Long customer_id) {
+		this.customer_id = customer_id;
+	}
+
+	public ArrayList<String> getItems() {
+		return items;
+	}
+
+	public void setItems(ArrayList<String> items) {
+		this.items = items;
+	}
+
 	@Override
 	public String toString() {
 		return "order_id: " + order_id + " customer_id: " + customer_id + " items: " + items;

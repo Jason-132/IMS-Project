@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.Spy;
+//import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.qa.ims.persistence.dao.Dao;
@@ -22,7 +22,7 @@ public class CustomerServicesTest {
 	
 	@Test
 	public void customerServicesCreate() {
-		Customer customer = new Customer("chris", "perrins");
+		Customer customer = new Customer("chris", "perrins", "23 Candy Lane");
 		customerServices.create(customer);
 		Mockito.verify(customerDao, Mockito.times(1)).create(customer);
 	}
