@@ -20,7 +20,6 @@ Give examples
 ### Installing
 
 Fork the repo and run in a Java IDE capable of using maven
-```
 
 ## Authors
 
