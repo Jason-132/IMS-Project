@@ -8,7 +8,7 @@ public class Orders {
 	private Long customer_id;
 	private ArrayList<String> items;
 
-	public Orders(Long order_id, Long customer_id, ArrayList<String> items) {
+	public Orders(Long order_id, Long customer_id, ArrayList<String> items) { 
 
 		this.order_id = order_id;
 		this.customer_id = customer_id;

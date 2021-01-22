@@ -63,7 +63,7 @@ public class CustomerDaoMysqlTest {
 		Customer customer2 = new Customer(1L, first_name2, surname2, address2);
 		Customer savedCustomer = new Customer(1L, first_name2, surname2, address2);
 		customer2 = customerDaoMysql.create(customer2);
-		assertEquals(savedCustomer.getFirstName(), customer2.getFirstName());
+		assertEquals(savedCustomer.getFirstName(), customer2.getFirstName()); 
 		assertEquals(savedCustomer.getSurname(), customer2.getSurname());
 		assertEquals(savedCustomer.getAddress(), customer2.getAddress()); 
 	}

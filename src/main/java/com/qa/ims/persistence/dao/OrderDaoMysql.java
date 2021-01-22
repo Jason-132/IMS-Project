@@ -14,7 +14,7 @@ import com.qa.ims.persistence.domain.Orders;
 
 public class OrderDaoMysql implements Dao<Orders> {
 
-	public static final Logger LOGGER = Logger.getLogger(OrderDaoMysql.class);
+	public static final Logger LOGGER = Logger.getLogger(OrderDaoMysql.class); 
 
 	private String jdbcConnectionUrl;
 	private String username;
